@@ -1,19 +1,29 @@
 // Typing effect script
-const textToType = " Strength, Courage, and Compassion."; // Your subtext here
-const subtextElement = document.getElementById("subtext");
-let index = 0;
 
-function typeText() {
-    if (index < textToType.length) {
-        subtextElement.innerHTML += textToType.charAt(index);
-        index++;
-        setTimeout(typeText, 100); // Delay between each character
+const words = [" Strength", " Courage", " Compassion"]; // Words to type one by one
+const animatedTextElement = document.getElementById("dynamicText");
+let wordIndex = 0;
+let charIndex = 0;
+
+function typeWord() {
+    if (charIndex < words[wordIndex].length) {
+        animatedTextElement.innerHTML += words[wordIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWord, 150); // Delay between each character
+    } else {
+        // Once the word is fully typed, clear it after a short delay
+        setTimeout(() => {
+            animatedTextElement.innerHTML = ""; 
+            charIndex = 0;
+            wordIndex = (wordIndex + 1) % words.length; // Move to the next word and loop back
+            setTimeout(typeWord, 500); // Start typing the next word
+        }, 1000); // Delay before clearing the word
     }
 }
-// Radio
-window.onload = function() {
-    typeText();
-};
+
+// Start the typing effect
+typeWord();
+
 
 
 window.addEventListener('DOMContentLoaded', function() {

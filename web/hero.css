@@ -11,10 +11,21 @@
     padding: 20px 50px 0px 50px;
     /* background-color: #800000; */
     background-image: url(../images/durgaBG.jpeg);
+    background-position: center 50px; /* for shifting the image 30px down */
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
-
+/* .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+} */
 .hero-content{
     max-width: 50% ;
 }
@@ -23,24 +34,35 @@
     color: #FFD700;
     text-shadow: 2px 2px 4px #4B0000;
     margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
 }
 .hero-content p{
     font-size: 24px;
     color: #FFFFFF; /*White Subtext*/
     margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 /* Typing effect for dynamic text */
-#dynamic-text {
+#dynamicText {
     font-weight: bold;
-    color: #fdd835; /* Golden yellow color for emphasis */
-    border-right: 2px solid #fff; /* Simulating the cursor */
+    color: #fdd835;
+    border-right: 2px solid #fff;
     white-space: nowrap;
     overflow: hidden;
+    animation: blink-cursor 1s step-end infinite;
+    text-shadow: 2px 2px 4px #000; /* Add a text shadow for better readability */
 }
 
 @keyframes blink-cursor {
     from, to { border-color: transparent; }
     50% { border-color: white; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.hero-content {
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Blinking cursor effect */
