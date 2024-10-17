@@ -8,7 +8,9 @@ html,body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    cursor: url('../images/trishul/cursor.png'), auto; 
 }
+
 
 
 .section{
@@ -61,6 +63,13 @@ html,body{
     background-attachment: fixed;
 }
 
+@media (max-width: 855px) {
+    .pmg1, .pmg2, .pmg3 {
+    background-size: cover;
+    max-width: 450px;
+    height: 200px;
+}
+}
 
 
 

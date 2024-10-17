@@ -10,7 +10,7 @@ function typeText() {
         setTimeout(typeText, 100); // Delay between each character
     }
 }
-
+// Radio
 window.onload = function() {
     typeText();
 };
@@ -37,3 +37,16 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const radioIcon = document.querySelector('.radio-icon');
+
+// Toggle the menu visibility on clicking the three-dot menu
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    radioIcon.classList.toggle('active');
+});
+
+
+

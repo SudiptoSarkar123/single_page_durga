@@ -138,3 +138,33 @@
         transform: rotate(360deg); /* Complete one full rotation */
     }
 }
+
+@media (max-width: 855px){
+    .hero{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 50px 0px opx 0px ;
+        /* padding: 20px; */
+        /* height: 100%; */
+      
+    }
+    .hero-content{
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 32px;
+    }
+
+    .hero-image{
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .in img{
+        width: 100%;
+    };
+}
