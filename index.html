@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Durga Website</title>
     <link rel="stylesheet" href="web/style1.css">
+    <link rel="stylesheet" href="web/navBar.css">
+    <link rel="stylesheet" href="web/hero.css">
+    <link rel="stylesheet" href="web/cards.css">
+    <link rel="stylesheet" href="web/gallery.css">
+    <link rel="stylesheet" href="web/scroll.css">
+    <link rel="stylesheet" href="web/about.css">
+    <link rel="stylesheet" href="web/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <a href="#">Shakti Devi</a>
+            <a href="#home">Shakti Devi Durga</a>
             <img src="images/coco.png" alt="">
         </div>
         <ul class="nav-links">
@@ -21,27 +31,41 @@
                     <li><a href="#mahishasura-mardini">Mahishasura Mardini</a></li>
                 </ul>
             </li>
-            <li><a href="#">Festivals</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#festivals">Festivals</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
+    
+        <!-- Radio Icon -->
+        <div class="radio-icon">
+             <img id="radioToggle" src="images/radio/radio_on.png"  alt="Radio" title="Click to stop music">
+             <!-- Hidden Audio Element -->
+             <audio id="backgroundMusic" src="music/music.mp3" preload="auto"></audio>
+            </div>
+            
+        
     </nav>
     
+    
     <!-- Hero Section -->
-     <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>The Eternal Grace of Ma Durga</h1>
             <p id="subtext" class="typing-effect">The Embodiment of</p>
-            <a href="#" class="btn">Explore Durga</a>
+            <a href="#festivals" class="btn">Explore The Festivals</a>
         </div>
         <div class="hero-image box">
             <div class="in">
-                <img src="images/durgaPNG.png" alt="">
+                <img src="images/durgaPNG.png" alt="Durga Image">
+                <div class="chkra">
+                    <img src="images/chakra.png" alt="Rotating Chakra">
+                </div>
             </div>
         </div>
-     </section>
-     <section class="section section-about">
+    </section>
+    <section class="section pmg1">
+    </section>
+     <section class="section section-birth_of_durga" id="divine-birth">
             <h2>The Divine Birth of Ma Durga</h2>
             <p>
                 The birth of Ma Durga is rooted in the cosmic necessity to restore balance in the universe. Mahishasura, a demon blessed by Lord Brahma, became invincible against any man or god, creating havoc throughout the three worlds. His powers led him to believe that no force could challenge his reign, and his tyranny grew unchecked as he defeated even the mightiest of gods.
@@ -51,7 +75,7 @@
      </section>
      <section class="section pmg2">
      </section>
-     <section class="section section-legends">
+     <section class="section section-Mahishasura_Mardini" id="mahishasura-mardini">
         <h2> The Story of Mahishasura Mardini</h2>
         <p>
             In ancient times, the demon king Mahishasura had gained invincible powers through severe penance, receiving a boon from Lord Brahma that no man or god could defeat him. Emboldened by this boon, Mahishasura unleashed terror across the heavens and earth, conquering all realms and challenging the very gods themselves.
@@ -65,7 +89,7 @@ This victory symbolizes the triumph of good over evil and is celebrated as Vijay
      </section>
      <section class="section pmg3">
     </section>
-     <section class="festival-cards">
+     <section class="festival-cards" id="festivals">
         <h1> Various Festivals Dedicated to Ma Durga</h2>
             <div class="fastival_container">
                 <div class="card">
@@ -109,22 +133,54 @@ This victory symbolizes the triumph of good over evil and is celebrated as Vijay
             </div>
         
     </section>
-    <section class="section-gallery" >
+    <section class="section-gallery"  id="gallery">
         <h2 class="gallery-heading">Ma Durga: A Journey Through Divine Imagery</h2>
          <div class="gallery">
             <div class="scope">
-                <span style="--i:1"><img src="images/sp1.jpg" alt="image not found"></span>
-                <span style="--i:2"><img src="images/sp2.jpg" alt="image not found"></span>
-                <span style="--i:3"><img src="images/sp3.jpg" alt="image not found"></span>
-                <span style="--i:4"><img src="images/sp4.jpg" alt="image not found"></span>
-                <span style="--i:5"><img src="images/sp5.jpg" alt="image not found"></span>
-                <span style="--i:6"><img src="images/sp6.jpg" alt="image not found"></span>
-                <span style="--i:7"><img src="images/sp7.jpg" alt="image not found"></span>
-                <span style="--i:8"><img src="images/sp8.jpg" alt="image not found"></span>
+                <span style="--i:1"><img src="images/durga_img_2024/d4.jpg" alt="image not found"></span>
+                <span style="--i:2"><img src="images/durga_img_2024/d5.jpg" alt="image not found"></span>
+                <span style="--i:3"><img src="images/durga_img_2024/d6.jpg" alt="image not found"></span>
+                <span style="--i:4"><img src="images/durga_img_2024/d7.jpg" alt="image not found"></span>
+                <span style="--i:5"><img src="images/durga_img_2024/d8.jpg" alt="image not found"></span>
+                <span style="--i:6"><img src="images/durga_img_2024/d9.jpg" alt="image not found"></span>
+                <span style="--i:7"><img src="images/durga_img_2024/d10.jpg" alt="image not found"></span>
+                <span style="--i:8"><img src="images/durga_img_2024/d11.jpg" alt="image not found"></span>
             </div>
          </div>
     </section>
-    
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                Welcome to our website! We are dedicated to bringing you the best content, insights, and updates about 
+                Ma Durga and her significance. Our mission is to inspire, inform, and engage our audience with valuable 
+                resources on spirituality and tradition.
+            </p>
+            <a href="#contact" class="btn-about">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sarkar_sudipto833?igsh=eXc2emJtc2tlZWZ6" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/eshan.sarkar.7355" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/@sudiptosarkar6075" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    <p class="footer-credit">&copy; 2024 Shakt_Davi_Durga | All Rights Reserved</p>
+</footer>
+
+
     
      <script src="script.js"></script>
 </body>

@@ -1,0 +1,24 @@
+
+/* scroll bar */
+
+/* Width of the entire scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Light gray */
+    border-radius: 10px;  /* Rounded corners */
+}
+
+/* Handle (scrollbar thumb) */
+::-webkit-scrollbar-thumb {
+    background: #d32f2f;  /* Red to match your theme */
+    border-radius: 10px;
+}
+
+/* Handle on hover (when user hovers over the scrollbar) */
+::-webkit-scrollbar-thumb:hover {
+    background: #b71c1c;  /* Darker red when hovered */
+}

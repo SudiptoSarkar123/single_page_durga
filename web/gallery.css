@@ -1,0 +1,90 @@
+
+/* section gallery */
+.section-gallery{
+    border-top: 2px orange solid;
+    height: 100%;
+    scroll-margin: 42px;
+  
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43,#0f2027); 
+    /* background-color: blueviolet; */
+    background-image: url(../images/kash_flower/kash1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.gallery-heading {
+    font-size: 42px;              /* Large font size for prominence */
+    font-weight: bold;            /* Bold to make it stand out */
+    color: #d32f2f;               /* Rich red to symbolize power and devotion */
+    text-align: center;           /* Centered alignment for a balanced look */
+    text-transform: uppercase;    /* Makes the heading text appear in all caps */
+    letter-spacing: 4px;          /* Increases space between letters for elegance */
+    margin-bottom: 30px;          /* Adds space below the heading */
+    position: relative;
+    padding-bottom: 15px;         /* Padding to make space for underline effect */
+    font-family: 'Georgia', serif; /* Adds a classic serif font for a traditional feel */
+}
+
+/* Decorative underline with ::after */
+.gallery-heading::after {
+    content: '';
+    display: block;
+    width: 100px;                 /* Width of the decorative underline */
+    height: 4px;                  /* Thickness of the line */
+    background-color: #fbc02d;    /* Golden color for divinity and prosperity */
+    margin: 10px auto 0 auto;     /* Centers the underline below the heading */
+    border-radius: 2px;           /* Smooths the corners of the underline */
+}
+
+.scope {
+    /* background-color: antiquewhite; */
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: slid 30s linear infinite;
+
+}
+
+.scope span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.scope span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.scope span img:hover {
+    transform: translateY(-50px) scale(1.7);
+}
+
+@keyframes slid {
+    0% {
+        transform:perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform:perspective(1000px) rotateY(360deg);
+    }
+}

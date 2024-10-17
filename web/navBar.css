@@ -1,0 +1,113 @@
+
+/* Navbar styling */
+.navbar {
+    background-color: #4B0000; /* Dark Maroon */
+    /* padding: 15px; */
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo a {
+    font-size: 28px;
+    color: #FFD700; /* Golden Yellow */
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #4B0000; /* Optional logo text shadow */
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    /* margin-right: 32px; */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #FFD700; /* Golden Yellow */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul{
+    list-style: none;
+    background-color:rgba(81, 21, 3, 0.9) ;
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.dropdown-content li {
+    padding: 10px 20px;
+}
+
+
+.dropdown-content a {
+    color: #d32f2f;
+}
+.dropdown:hover .dropdown-content {
+    display: block; /* Shows the dropdown when hovering */
+}
+
+.nav-links a:hover {
+    color: #FF8C00; /* Orange on hover */
+}
+
+/* Optional: Add a bottom border to distinguish the navbar */
+.navbar {
+    border-bottom: 2px solid #FFD700; /* Golden border */
+}
+
+
+
+/* Radio styling */
+
+.radio-icon {
+    /* margin-right: auto; */
+    margin-left: 10px;
+    margin-right: 32px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.radio-icon img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(0); /* Full color when playing */
+    transition: filter 0.3s ease;
+}
+
+/* Class for when audio is paused */
+.radio-icon.paused img {
+    filter: grayscale(100%); /* Turns the icon to grayscale (color off) */
+}

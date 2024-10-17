@@ -1,0 +1,35 @@
+/* Footer Styling */
+.footer {
+    background-color: #4B0000; /* Dark Maroon */
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFD700; /* Golden Yellow */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #FFD700; /* Golden Yellow */
+    font-size: 30px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #FF8C00; /* Orange on hover */
+}
+
+.footer-credit {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #FFD700; /* Golden Yellow */
+}
