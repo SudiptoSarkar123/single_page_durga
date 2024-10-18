@@ -1,0 +1,4 @@
+/* Apply the Trisul cursor for the entire body */
+body {
+    cursor: url('../images/trishul/trishul.png'), auto;
+}

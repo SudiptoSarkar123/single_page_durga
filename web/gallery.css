@@ -21,27 +21,26 @@
 }
 
 .gallery-heading {
-    font-size: 42px;              /* Large font size for prominence */
-    font-weight: bold;            /* Bold to make it stand out */
-    color: #d32f2f;               /* Rich red to symbolize power and devotion */
-    text-align: center;           /* Centered alignment for a balanced look */
-    text-transform: uppercase;    /* Makes the heading text appear in all caps */
-    letter-spacing: 4px;          /* Increases space between letters for elegance */
-    margin-bottom: 30px;          /* Adds space below the heading */
+    font-size: 42px;              
+    font-weight: bold;            
+    color: #d32f2f;              
+    text-align: center;           
+    text-transform: uppercase;    
+    letter-spacing: 4px;         
+    margin-bottom: 30px;         
     position: relative;
-    padding-bottom: 15px;         /* Padding to make space for underline effect */
-    font-family: 'Georgia', serif; /* Adds a classic serif font for a traditional feel */
+    padding-bottom: 15px;        
+    font-family: 'Georgia', serif; 
 }
-
 /* Decorative underline with ::after */
 .gallery-heading::after {
     content: '';
     display: block;
-    width: 100px;                 /* Width of the decorative underline */
-    height: 4px;                  /* Thickness of the line */
+    width: 100px;                 
+    height: 4px;                  
     background-color: #fbc02d;    /* Golden color for divinity and prosperity */
-    margin: 10px auto 0 auto;     /* Centers the underline below the heading */
-    border-radius: 2px;           /* Smooths the corners of the underline */
+    margin: 10px auto 0 auto;    
+    border-radius: 2px;          
 }
 
 .scope {

@@ -160,33 +160,62 @@
         transform: rotate(360deg); /* Complete one full rotation */
     }
 }
-
-@media (max-width: 855px){
-    .hero{
+/* For screens smaller than 855px */
+@media (max-width: 855px) {
+    .hero {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 50px 0px opx 0px ;
-        /* padding: 20px; */
-        /* height: 100%; */
-      
+        padding: 50px 20px;
     }
-    .hero-content{
+
+    .hero-content {
+        margin-top: 30%;
         max-width: 100%;
         text-align: center;
     }
-    .hero-content h1{
-        font-size: 32px;
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;     /* Centering the Durga image vertically */
+        margin-top: 20px;
+        position: relative;
+        width: 100%;
+        max-width: 400px; 
     }
 
-    .hero-image{
+    .hero-image .in {
+        display: flex;
+        justify-content: center; /* Center Chakra and Durga image horizontally */
+        position: relative;
         width: 100%;
-        margin-right: 0;
-        margin-top: 0;
     }
 
-    .in img{
-        width: 100%;
-    };
+    .hero-image .in img {
+        width: 250px; /* Adjust width for smaller screens */
+    }
+
+    .chkra {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px; /* Adjust for smaller screens */
+        height: 250px; /* Adjust for smaller screens */
+        z-index: 1;
+    }
+}
+
+/* For even smaller screens like mobile */
+@media (max-width: 600px) {
+    .hero-image .in img {
+        width: 200px; /* Further reduce image size for mobile */
+    }
+
+    .chkra {
+        width: 200px;
+        height: 200px;
+    }
 }

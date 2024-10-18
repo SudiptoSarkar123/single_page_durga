@@ -8,10 +8,7 @@ html,body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    cursor: url('../images/trishul/cursor.png'), auto; 
 }
-
-
 
 .section{
     padding:50px 80px;
@@ -24,6 +21,7 @@ html,body{
     font-size: 24px;
     /* text-align: justify; */
 }
+
 .section-birth_of_durga{
     background-image: url(../images/text_bg2.jpg);
     background-repeat: no-repeat;
@@ -35,11 +33,15 @@ html,body{
     background: linear-gradient(135deg, #ffcc80, #ff7043);
     color:#2c3e50; /* White text for high contrast */
 }
+
+
 .section-Mahishasura_Mardini h2{
     
         color: #d32f2f; /* Rich red color for the heading */
     
 }
+
+
 .pmg1{
     background-image: url(../images/durga_img_2024/d16.jpg);
 }
@@ -55,21 +57,41 @@ html,body{
     height: 200px;
 }
 
-.pmg1,.pmg2,.pmg3{
-    /* top: 30px; */
-    position:relative;
+.pmg1, .pmg2, .pmg3 {
+    background-size: cover;
     background-position: center;
-    background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Keep fixed background on large screens */
+    position: relative;
+    height: 300px; /* Adjust for better visibility */
+    min-width: 450px;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 855px) {
     .pmg1, .pmg2, .pmg3 {
-    background-size: cover;
-    max-width: 450px;
-    height: 200px;
+        background-attachment: fixed; /* Remove fixed background */
+        background-size: cover;
+        width: 100%;
+        height: 250px; 
+    }
+
+    .section {
+        padding: 30px 40px; /* Reduce padding for small screens */
+    }
 }
+
+
+@media (max-width: 600px) {
+    .pmg1, .pmg2, .pmg3 {
+        background-attachment: fixed; 
+        width: 100%;
+        height: 200px; 
+    }
+
+    .section {
+        padding: 20px 20px; /
+    }
 }
 
 
