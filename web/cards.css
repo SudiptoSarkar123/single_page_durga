@@ -10,7 +10,8 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    padding: 50px 0;
 }
 .festival-cards h1 {
     padding-top: 5px;
